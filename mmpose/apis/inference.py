@@ -126,7 +126,7 @@ def init_model(config: Union[str, Path, Config],
     model.dataset_meta = dataset_meta
 
     model.cfg = config  # save the config in the model for convenience
-    model.to(device)
+    model
     model.eval()
     return model
 
